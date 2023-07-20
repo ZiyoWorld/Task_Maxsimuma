@@ -30,3 +30,33 @@ const dragStop = ()=>{
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
+
+
+
+// modal uchun
+
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const btnModal = document.querySelector('#modal-btn');
+const closeModal = document.querySelector('.close-btn');
+btnModal.addEventListener( 'click', ()=>{
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+});
+
+overlay.addEventListener('click', ()=>{
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+});
+
+closeModal.addEventListener('click', ()=>{
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+});
+
+document.addEventListener('keydown', (e)=>{
+    if(e.key === "Escape"){
+        modal.classList.add('hidden');
+        overlay.classList.add('hidden');
+    }
+})

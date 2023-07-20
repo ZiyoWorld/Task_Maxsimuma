@@ -9,12 +9,52 @@
 <body>
 <div class="container">
     <div class="header">
+        <div>
+            Logo
+        </div>
         <ul class="menu">
             <li><a href="#">Главная</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="#">О нас</a></li>
             <li><a href="#">Контакты</a></li>
         </ul>
+        <button id="modal-btn">Sign up</button>
+    </div>
+
+    <!-- modal-container -->
+    <div class="modal-container">
+        <div class="modal hidden">
+            <span class="close-btn">❌</span>
+            <form action="#" method="post" class="modal-form">
+                <h1 class="title">Регистр</h1>
+                <p class="subtitle">Войдите и начните управлять своими кандидатами!</p>
+                <div class="main-input">
+                    <input type="text" placeholder="ФИО">
+                </div>
+                <div class="main-input">
+                    <input type="text" placeholder="Телефон">
+                </div>
+                <div class="main-input">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="main-input">
+                    <input type="text" placeholder="Логин">
+                </div>
+                <div class="main-input">
+                    <input type="text" placeholder="Пароль">
+                </div>
+                <div class="main-input">
+                    <input type="text" placeholder="Группа пользователя">
+                </div>
+                <div class="main-input">
+                    <button class="modal-in-btn">Register</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <div class="overlay hidden">
+
     </div>
 
     <!-- <div class="slider" id="slider">
