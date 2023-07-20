@@ -252,6 +252,70 @@ body {
     cursor: grab;
 }
 
+.form-section{
+    padding: 3rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.form{
+    background-color: #fff;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 70px;
+}
+.form h1{
+    text-align: left;
+    font-size: 40px;
+    font-weight: 600;
+}
+.form p{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.name_input{
+    width: 100%;
+}
+.input_style{
+    width: 100%;
+    margin: 10px 0;
+    height: 45px;
+    padding-left:25px;
+    border: none;
+    background-color:rgb(241,244,249);
+    border-radius: 10px;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(132,150,181, 0.9);
+}
+input::placeholder{
+    color: rgba(132,150,181, 0.9);
+}
+textarea::placeholder{
+    color: rgba(132,150,181, 0.9);
+}
+.textaria{
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.btn_form{
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: rgb(34,95,191);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+
+}
+
 @media screen and (max-width: 900px) {
     .news-container .carousel{
         grid-auto-columns: calc((100% / 3) - 9px);
